@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+      <link rel="stylesheet" type="text/css" href="styles.css">
+      <script src="Script.js"></script>
+    </head>
+    <body>
+        <div id="main">
+          <div id="menu" class="frame hidden">
+            <div class="title">Tic-Tac-Toe</div>
+            <div id="options-area">
+              <button id="minimax" class="options-button" onclick="start('minimax')">Minimax</button>
+              <button id="q-table" class="options-button" onclick="start('q-table')">Q-Table</button>
+            </div>
+          </div>
+          <div id="home" class ="frame">
+            <div id="infoArea">
+              <div id="q-table-training-area" class="hidden">
+                <button id="train" onclick="runTrain()">Train</button>
+                <input id="train-times" type="text" placeholder="1" value="1"/>
+                <button id="show-q-table" onclick="showQTable()">Show Q-Table</button>
+              </div>
+              <p>Choose your character:</p>
+              <div id="play-selection">
+                <button id="play-x" onclick="playX()">X</button>
+                <button id="play-o" onclick="playO()">O</button>
+              </div>
+              <div id="nextTurn">Next Player: X</div>
+              <div id="thinking">Your Move</div>
+            </div>
+            <div id="playArea">
+              <div class="square" id="id0" onclick="squareClicked(0)"></div>
+              <div class="square" id="id1" onclick="squareClicked(1)"></div>
+              <div class="square" id="id2" onclick="squareClicked(2)"></div>
+              <div class="square" id="id3" onclick="squareClicked(3)"></div>
+              <div class="square" id="id4" onclick="squareClicked(4)"></div>
+              <div class="square" id="id5" onclick="squareClicked(5)"></div>
+              <div class="square" id="id6" onclick="squareClicked(6)"></div>
+              <div class="square" id="id7" onclick="squareClicked(7)"></div>
+              <div class="square" id="id8" onclick="squareClicked(8)"></div>
+            </div>
+          </div>
+        </div>
+    </body>
+</html>
